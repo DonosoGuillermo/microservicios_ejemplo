@@ -29,7 +29,7 @@ spring:
           uri: lb://pet-service
           predicates:
             - Path=/pet/**
-        - id: datoHora-service
-          uri: lb://datoHora-service
+        - id: marcas-service
+          uri: lb://marcas-service
           predicates:
-            - Path=/datoHora/**
+            - Path=/empleado/**
