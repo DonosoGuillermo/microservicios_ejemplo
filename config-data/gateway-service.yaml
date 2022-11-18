@@ -33,3 +33,6 @@ spring:
           uri: lb://marcas-service
           predicates:
             - Path=/fileDatoHora/**
+            filters:
+              - AddResponseHeader=Access-Control-Allow-Origin, *
+              - RewritePath=/fileDatoHora/(?<segment>.*), /$\{segment}
