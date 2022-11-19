@@ -33,3 +33,4 @@ spring:
           uri: lb://marcas-service
           predicates:
             - Path=/datoHora/**
+            - Path=/fileDatoHora/**
