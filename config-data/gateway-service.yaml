@@ -33,3 +33,7 @@ spring:
           uri: lb://marcas-service
           predicates:
             - Path=/datoHora/**
+        - id: justificativo-service
+          uri: lb://justificativo-service
+          predicates:
+            - Path=/justificativo/**
