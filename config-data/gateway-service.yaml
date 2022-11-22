@@ -41,3 +41,7 @@ spring:
           uri: lb://hrExtra-service
           predicates:
             - Path=/hrExtra/**
+        - id: reporte-service
+          uri: lb://reporte-service
+          predicates:
+            - Path=/reporte/**
